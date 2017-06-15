@@ -23,7 +23,7 @@ public class BookReducer extends MapReduceBase implements org.apache.hadoop.mapr
                        Reporter reporter)
             throws IOException {
         // Getting the KEY.
-        
+
         Text key = _key;
         int frequencyForYear = 0;
         while (values.hasNext()) {
