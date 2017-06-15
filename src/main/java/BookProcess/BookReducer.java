@@ -22,6 +22,8 @@ public class BookReducer extends MapReduceBase implements org.apache.hadoop.mapr
                        OutputCollector<Text,IntWritable> output,
                        Reporter reporter)
             throws IOException {
+        // Getting the KEY.
+        
         Text key = _key;
         int frequencyForYear = 0;
         while (values.hasNext()) {
